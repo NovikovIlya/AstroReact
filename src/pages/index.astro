@@ -1,39 +1,18 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import HelloWorld from '../components/HelloWorld';
+
 ---
 
 <Layout
   title="Привет, мир! | Моё Astro приложение"
   description="Простое приложение на Astro с использованием React компонентов"
 >
-  <main>
+  <main class="">
+    <h1 class="">
+      Hello world!
+    </h1>
     <HelloWorld client:load />
   </main>
 </Layout>
 
-<style>
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    text-align: center;
-  }
-
-  :global(.hello-world) {
-    padding: 2rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-
-  :global(.hello-world h1) {
-    color: #333;
-    margin-bottom: 1rem;
-  }
-
-  :global(.hello-world p) {
-    color: #666;
-  }
-</style>
